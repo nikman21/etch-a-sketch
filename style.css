@@ -1,0 +1,143 @@
+body {
+  background-color: #f6f6f6;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  grid-gap: 0;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 10px solid #ccc;
+  border-radius: 20px;
+}
+
+.cell {
+  background-color: white;
+  border: none;
+  user-select: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #2f2f2f;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.input-label {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #2f2f2f;
+}
+
+.color-picker {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.color-picker::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-picker::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+.input-number {
+  appearance: none;
+  width: 150px;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.input-number::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2f2f2f;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-number::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2f2f2f;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-number:hover {
+  opacity: 1;
+}
+
+.input-number::-moz-range-track {
+  background: #ddd;
+  border-radius: 5px;
+  height: 10px;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.btn-clear {
+  background-color: #2f2f2f;
+  color: white;
+}
+
+.btn-eraser{
+  background-color: #2f2f2f;
+  color: white;
+  }
+  
+.btn:hover {
+  background-color: #ccc;
+  color: white;
+}
+  
+.btn-eraser-active {
+  background-color: #ccc;
+  color: #2f2f2f;
+}
+
+
+  

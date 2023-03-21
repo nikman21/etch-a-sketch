@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Etch-A-Sketch</h1>
+    </header>
+    <div class="container"></div>
+    <div class="controls">
+      <div class="input-wrapper">
+        <input type="color" id="color-picker" class="color-picker">
+        <span class="input-label">Color</span>
+      </div>
+      <button id="clear-button" class="btn btn-clear">Clear</button>
+      <button id="eraser-button" class="btn btn-eraser">Eraser</button>
+      
+      <div class="input-wrapper">
+        <input id="brush-size" type="range" min="1" max="7" value="1" class="input-number" data-value="1">
+        <span class="input-label">Brush Size</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
